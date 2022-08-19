@@ -1,22 +1,25 @@
-.list-controls {
-  .nav-pills {
-    > li {
-      a {
-        transititon: border-bottom 0.2s, color 0.2s;
-        border-bottom: 3px solid transparent;
-        margin: 0 0.25em;
-        &.active {
-          color: var(--quaternary);
-          background-color: transparent;
-          border-bottom-color: var(--quaternary);
-        }
-        &:hover,
-        &:focus {
-          color: var(--quaternary);
-          background-color: transparent;
-          border-bottom-color: var(--quaternary);
+@if $desktop-navigation-enabled == "true" {
+  .list-controls {
+    .nav-pills {
+      > li {
+        border: none;
+        a {
+          transition: border-bottom 0.2s, color 0.2s;
+          border-bottom: 3px solid transparent;
+          margin: 0 0.25em;
+          &.active {
+            color: var(--quaternary);
+            background-color: transparent;
+            border-bottom-color: var(--quaternary);
+          }
+          &:hover,
+          &:focus {
+            color: var(--quaternary);
+            background-color: transparent;
+            border-bottom-color: var(--quaternary);
+          }
         }
       }
     }
   }
-}  
+}
