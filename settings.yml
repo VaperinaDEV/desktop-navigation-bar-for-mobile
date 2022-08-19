@@ -1,4 +1,0 @@
-desktop_navigation_enabled:
-  type: bool
-  default: false
-  description: "Enable desktop navigation bar."
